@@ -3,7 +3,7 @@ import * as cheerio from "cheerio";
 
 const FetchGenres = async () => {
     try {
-        const { data } = await axios.get("https://lk21.film/", { headers: { "User-Agent": "Mozilla/5.0" }, });
+        const { data } = await axios.get("https://tv1.lk21official.love", { headers: { "User-Agent": "Mozilla/5.0" }, });
         const $ = cheerio.load(data);
         const validGenres = [
             "Action", "Adventure", "Animation", "Biography", "Comedy", "Crime",
